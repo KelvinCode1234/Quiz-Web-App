@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+ 
+.app h1 {
+    font-size: 40px;
+    border-bottom: 1px solid #333;
+    color: black;
+    margin: 20px 0;
+    padding-bottom: 30px;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.btn {
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 100%);
+    color: #fff;
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.fa-solid.fa-copyright {
+    font-size: 20px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+    margin: 30px;
+    text-align: center;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: none;
+    cursor: pointer;
+}
+
+.correct {
+    background: #53ff9e;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+h1 {
+    animation: my-animation 1s ease-in-out;
+  }
+  
+  @keyframes my-animation {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 3;
+    }
+    
+  }
+
+  @media only screen and(max-width) {
+    .btn:hover:not([disabled]) {
+        background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 100%);
+        color: #fff;
+        transform: translateX(10px);
+        transition: 0.5s;
+    }
+    .end p {
+        font-size: 28px;
+    }
+    i {
+        font-size: 10px;
+        font-weight: 400;
+    }
+  }
+
+
+
+
+
