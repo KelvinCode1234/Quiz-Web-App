@@ -81,12 +81,12 @@ const questions = [
         ]
     },
     {
-        question: "Mount Everest is located in which mountain range?",
+        question: "Which animal is known for its unique ability to change its body color to blend in with its surroundings?",
         answers: [
-            {text: "Himalayas", correct: true},
-            {text: "Rocky Mountains", correct: false},
-            {text: "Andes", correct: false},
-            {text: "Alps", correct: false},
+            {text: "Chameleon", correct: true},
+            {text: "Squid", correct: false},
+            {text: "Octopus", correct: false},
+            {text: "Cuttlefish", correct: false},
         ]
     },
     {
@@ -178,8 +178,109 @@ const questions = [
             {text: "South Africa", correct: false},
             {text: "Brazil", correct: false},
         ]
+    },
+    {
+        question: "Which river is the longest in Africa?",
+        answers: [
+            {text: "Nile", correct: true},
+            {text: "Congo", correct: false},
+            {text: "Niger", correct: false},
+            {text: "Zambezi", correct: false},
+        ]
+    },
+    {
+        question: "Which African country has the most languages spoken?",
+        answers: [
+            {text: "South Africa", correct: false},
+            {text: "Nigeria", correct: true},
+            {text: "Ethiopia", correct: false},
+            {text: "Cameroon", correct: false},
+        ]
+    },
+    {
+        question: " Which African country is the largest by population?",
+        answers: [
+            {text: "Nigeria", correct: true},
+            {text: "Egypt", correct: false},
+            {text: "South Africa", correct: false},
+            {text: "Kenya", correct: false},
+        ]
+    },
+    {
+       question: " Which African country is known for its pyramids?",
+       answers: [
+            {text: "Egypt", correct: true},
+            {text: "Nigeria", correct: false},
+            {text: "South Africa", correct: false},
+            {text: "Kenya", correct: false},
+       ]
+    },
+    {
+        question: " Which planet in our solar system is known for being red?",
+        answers: [
+            {text: "Mars", correct: true},
+            {text: "Jupiter", correct: false},
+            {text: "Saturn", correct: false},
+            {text: "Uranus", correct: false},
+        ]
+    },
+    {
+        question: "Which element is the most abundant in the Earth's atmosphere?",
+        answers: [
+            {text: "Oxygen", correct: false},
+            {text: "Helium", correct: false},
+            {text: "Carbon dioxide", correct: false},
+            {text: "Nitrogen", correct: true},
+        ]
+    },
+    {
+        question: "Which planet in our solar system is known for being the hottest?",
+        answers: [
+            {text: "Mecury", correct: false},
+            {text: "Mars", correct:  false},
+            {text: "Venus", correct: true},
+            {text: "Jupiter", correct: false},
+        ]
+    },
+    {
+        question: "Which animal is known for its slow movement and long lifespan?",
+        answers: [
+            {text: "Tortoise", correct: true},
+            {text: "Elephant", correct: false},
+            {text: "Snail", correct: false},
+            {text: "Frog", correct: false},
+        ]
+    },
+    {
+        question: "Which animal has the longest gestation period?",
+        answers: [
+            {text: "Elephant", correct: true},
+            {text: "Giraffe", correct: false},
+            {text: "Hippopotamus", correct: false},
+            {text: "Whale", correct: false},
+        ]
+    },
+    {
+        question: "Which animal is known for its agility and ability to climb trees?",
+        answers: [
+            {text: "Monkey", correct: true},
+            {text: "Lion", correct: false},
+            {text: "Tiger", correct: false},
+            {text: "Bear", correct: false},
+        ]
     }
 ];
+
+
+// shuffle the questions array
+questions.sort(() => Math.random() - 0.5);
+
+
+// shuffle the answers array for each question
+questions.forEach(question => {
+    question.answers.sort(() => Math.random() - 0.5);
+});
+
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -201,16 +302,22 @@ function showQuestion(){
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
+
+    // shuffle the answers before displaying them
+  const shuffledAnswers = currentQuestion.answers.slice();
+  shuffledAnswers.sort(() => Math.random() - 0.5);
+
+
+  shuffledAnswers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text;
+    button.classList.add("btn");
+    answerButtons.appendChild(button);
+    if(answer.correct){
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+  });
 }
 
 
