@@ -271,6 +271,16 @@ const questions = [
     }
 ];
 
+//default the console 
+console.log = function() {};
+Object.defineProperty(window, 'console', { get: function() { return { log: function() {} }; } });
+
+
+//Disable the inspect
+document.oncontextmenu = function() { 
+return false; 
+};
+
 
 // shuffle the questions array
 questions.sort(() => Math.random() - 0.5);
