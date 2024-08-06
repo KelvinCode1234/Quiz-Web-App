@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,23 +7,29 @@
     font-family: 'Nova Square', cursive;
 }
 
+:root {
+    background: url(abstract_pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 .app {
     background: #fff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 30px auto;
     border-radius: 10px;
     padding: 30px;
-
+    margin-block: 45px;
 }
  
 .app h1 {
-    font-size: 40px;
+    font-size: 43px;
     border-bottom: 1px solid #333;
     color: black;
     margin: 20px 0;
@@ -69,9 +76,10 @@ body {
 
 footer p {
     color: #fff;
-    font-size: 15px;
-    margin: 30px;
+    font-size: 20px;
+    margin-top: 50px;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #next-btn {
