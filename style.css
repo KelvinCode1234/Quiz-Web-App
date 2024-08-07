@@ -26,7 +26,6 @@ h2 {
   font-size: 50px;
   color: #fff;
   margin-top: 90px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -79,6 +78,7 @@ h2 {
     cursor: pointer;
     transform: scale(0.9);
     transition: 0.5s ease-in-out;
+    background: linear-gradient(90deg, rgb(255, 243, 243) 0%, rgb(0, 85, 212) 100%);
 }
 
 
@@ -111,40 +111,50 @@ h1 {
     }
   }
 
+  @media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .btn-1{
+      width: 30%;
+      padding: 0.5rem 0;
+      font-weight: 500;
+    }
+
+  }
+
   
   @media only screen and (max-width: 600px) {
-     .logo img {
-        width: 60px;
-        height: 60px;
-        top: 0;
-        margin: 10px 20px;
-     }
+    .container {
+      margin-block-end: 25px;
+      margin-block-start: -55px;
+    }
 
-     .app {
-        margin-top: -30px;
-     }
 
-     h1 {
-        font-size: 30px;
-        text-align: left;
+    h1 {
+        font-size: 23px;
+        text-align: center;
         color: #fff;
-        margin-bottom: 15rem;
+        margin-bottom: 20px;
      }
+  
+    h2 {
+       font-size: 25px;
+    }
+
+
      .btn-1 {
         font-size: 20px;
-        width: 80%;
-        height: 80%;
-        border-radius: 30px;
+        width: 40%;
+        border-radius: 25px;
      }
     
     .end p {
         color: #fff;
-        font-size: 12px;
+        font-size: 13px;
         text-align: center;
         margin: 20px;
     }
-    .fa-solid.fa-copyright {
-        font-size: 15px;
-    }
-    
   }

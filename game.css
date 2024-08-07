@@ -119,8 +119,17 @@ h1 {
     }
     
   }
-
-  @media only screen and(max-width) {
+@media screen and (max-width: 800px) {
+   .app {
+      margin-block-end: 25px;
+    } 
+    
+    .end p {
+        margin-top: -15px;
+    }
+}
+   
+@media only screen and (max-width: 600px) {
     .btn:hover:not([disabled]) {
         background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 100%);
         color: #fff;
@@ -128,13 +137,10 @@ h1 {
         transition: 0.5s;
     }
     .end p {
-        font-size: 28px;
+        font-size: 13px;
+        margin-top: 20px;
     }
-    i {
-        font-size: 10px;
-        font-weight: 400;
-    }
-  }
+}
 
 
 
