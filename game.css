@@ -8,23 +8,24 @@
 }
 
 :root {
-    background: url(abstract_pic.png);
+    background: url(a.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 .app {
     background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     width: 90%;
     max-width: 600px;
     margin: 30px auto;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     margin-block: 45px;
 }
  
@@ -35,6 +36,27 @@ body {
     margin: 20px 0;
     padding-bottom: 30px;
 }
+
+span {
+    color: rgb(0, 102, 255);
+}
+
+/* Timer styles */
+#timer {
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(24, 24, 24, 0.5);
+    font-weight: bolder;
+    color: #6EC207;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    width: 150px;
+    margin: 0 auto;
+    border: none;
+}
+/* Timer styles End */
 
 .quiz h2 {
     font-size: 20px;
@@ -74,10 +96,10 @@ body {
     font-size: 10px;
 }
 
-footer p {
+.end p {
     color: #fff;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -110,26 +132,30 @@ h1 {
   
   @keyframes my-animation {
     0% {
-      transform: translateY(-100%);
+      transform: translateX(40%);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 3;
     }
     
   }
 @media screen and (max-width: 800px) {
    .app {
-      margin-block-end: 25px;
+      margin-block-end: 20px;
     } 
     
     .end p {
-        margin-top: -15px;
+        margin: 15px;
     }
 }
    
 @media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 118vh;
+    }
     .btn:hover:not([disabled]) {
         background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 100%);
         color: #fff;
@@ -137,8 +163,8 @@ h1 {
         transition: 0.5s;
     }
     .end p {
-        font-size: 13px;
-        margin-top: 20px;
+        font-size: 14px;
+        margin-top: 15px;
     }
 }
 

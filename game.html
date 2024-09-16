@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
-    <link rel="stylesheet" href="game.css">
-    <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Page</title>
+        <link rel="stylesheet" href="game.css">
+        <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="f.png">
     </head>
     <body>
         <div class="app">
-            <h1>Quiz</h1>
+            <!-- Timer Added Here -->
+            <div id="timer">15:00</div>
+            
+            <h1><span>Q</span>uiz<span>.</span></h1>
             <div class="quiz">
                 <h2 id="question">Question goes here</h2>
                 <div id="answer-buttons">
@@ -25,7 +29,7 @@
             <footer>
               <p>Copyright &copy; 2024 Quiz Web-App | All Right Reserved</p>
             </footer>
-            </div>
+        </div>
         <script src="game.js"></script>  
     </body>
 </html>

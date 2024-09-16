@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 :root {
-   background: url(abstract_pic.png);
-   background-repeat: no-repeat;
-   background-size: cover;
+  background: url(a.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 *{
@@ -36,7 +36,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    max-width: 60rem;
     margin-block: -55px;
 }
 
@@ -63,14 +63,14 @@ h2 {
 }
 
 .btn-1 {
-    font-size: 25px;
-    padding: 1rem 0;
-    width: 23%;
+    font-size: 30px;
+    padding: 0.7rem 0;
+    width: 20%;
     text-align: center;
     text-decoration: none;
-    color: rgb(28, 26, 26);
+    color: rgb(0, 0, 0);
     border-radius: 15px;
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 102, 255) 100%);
+    background: linear-gradient(90deg, rgb(184, 207, 255) 0%, rgb(0, 102, 255) 100%);
     margin-top: 35px;
 }
 
@@ -102,7 +102,7 @@ h1 {
   
   @keyframes my-animation {
     0% {
-      transform: translateY(50%);
+      transform: translateY(70%);
       opacity: 0;
     }
     100% {
@@ -152,9 +152,9 @@ h1 {
      }
     
     .end p {
-        color: #fff;
-        font-size: 13px;
-        text-align: center;
-        margin: 20px;
+      color: #fff;
+      font-size: 13px;
+      text-align: center;
+      margin: 20px;
     }
   }

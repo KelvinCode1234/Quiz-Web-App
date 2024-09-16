@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-   <html lang="en">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Web-App</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Web-App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="f.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <div class="container">
     <div id="home" class="flex-column flex-center">
       <h1>The Ultimate 30-Question Challenge</h1>
       <h2>Are You Ready?</h2>
-      <a href="game.html" class="btn-1">Start Playing</a>
+      <a href="game.html" class="btn-1">Start</a>
     </div>
     </div>
     <div class="end">
@@ -20,5 +23,19 @@
       <p>Copyright &copy; 2024 Quiz Web-App | All right reserved</p>
     </footer>
     </div>
+    <script>
+         $(document).ready(function() {
+            function shakeElement() {
+                $(".btn-1").addClass("animate__animated animate__shakeX");
+                // Remove the class after animation completes (800ms for shakeX animation)
+                setTimeout(function() {
+                    $(".btn-1").removeClass("animate__animated animate__shakeX");
+                }, 800); // Duration of shakeX animation
+            }
+            
+            // Call shakeElement every 1.9 seconds
+            setInterval(shakeElement, 1900);
+        });
+    </script>
 </body>
 </html>

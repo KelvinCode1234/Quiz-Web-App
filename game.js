@@ -36,21 +36,21 @@ const questions = [
         ]
     },
     {
-        question: "Who built the Great Pyramid of Giza?",
+        question: "How many bones are there in the adult human body?",
         answers: [
-            {text: "Pharaoh Khufu", correct: true},
-            {text: "Napoleon Bonaparte", correct: false},
-            {text: "Albert Einstein", correct: false},
-            {text: "Leonardo da Vinci", correct: false},
+            {text: "198", correct: false},
+            {text: "206", correct: true},
+            {text: "215", correct: false},
+            {text: "222", correct: false},
         ]
     },
     {
-        question: "The Treaty of Versailles was signed in which year?",
+        question: "What is the currency used in the United Kingdom?",
         answers: [
-            {text: "1969", correct: false},
-            {text: "1945", correct: false},
-            {text: "1865", correct: false},
-            {text: "1919", correct: true},
+            {text: "Euro", correct: false},
+            {text: "Dollar", correct: false},
+            {text: "Pound Sterling", correct: true},
+            {text: "Yen", correct: false},
         ]
     },
     {
@@ -63,30 +63,30 @@ const questions = [
          ]
     },
     {
-        question: "Which element is the lightest in the periodic table?",
+        question: "Who invented the telephone?",
         answers: [
-            {text: "Oxygen", correct: false},
-            {text: "Helium", correct: false},
-            {text: "Hydrogen", correct: true},
-            {text: "Nitrogen", correct: false},
+            {text: "Thomas Edison", correct: false},
+            {text: "Alexander Graham Bell", correct: true},
+            {text: "Nikola Tesla", correct: false},
+            {text: "Samuel Morse", correct: false},
         ]
     },
     {
-        question: "What is the largest living thing on Earth?",
+        question: "What year did World War II end?",
         answers: [
-            {text: "Blue Whale", correct: false},
-            {text: "Great Barrier Reef", correct: true},
-            {text: "Amazon Rainforest", correct: false},
-            {text: "Grand Canyon", correct: false},
+            {text: "1943", correct: false},
+            {text: "1944", correct: false},
+            {text: "1945", correct: true},
+            {text: "1946", correct: false},
         ]
     },
     {
-        question: "Which animal is known for its unique ability to change its body color to blend in with its surroundings?",
+        question: "What is the largest island in the world?",
         answers: [
-            {text: "Chameleon", correct: true},
-            {text: "Squid", correct: false},
-            {text: "Octopus", correct: false},
-            {text: "Cuttlefish", correct: false},
+            {text: "Greenland", correct: true},
+            {text: "Iceland", correct: false},
+            {text: "Madagascar", correct: false},
+            {text: "Borneo", correct: false},
         ]
     },
     {
@@ -99,39 +99,39 @@ const questions = [
         ]
     },
     {
-       question: "Who won the 2018 FIFA World Cup?",
+       question: "Who won the 2022 FIFA World Cup?",
        answers: [
-            {text: "France", correct: true},
+            {text: "France", correct: false},
             {text: "Croatia", correct: false},
-            {text: "Germany", correct: false},
+            {text: "Argentina", correct: true},
             {text: "Brazil", correct: false},
        ]
     },
     {
-        question: "Who founded the company Microsoft?",
+        question: "What is the square root of 841?",
         answers: [
-            {text: "Micheal Jackson", correct: false},
-            {text: "Bill Gates", correct: true},
-            {text: "Steve Jobs", correct: false},
-            {text: "Mark Zuckerberg", correct: false},
+            {text: "22", correct: false},
+            {text: "29", correct: true},
+            {text: "28.3", correct: false},
+            {text: "144", correct: false},
         ]
     },
     {
-        question: "What is the process by which water moves through a plant, from the roots to the leaves?",
+        question: "What is the capital city of Japan?",
         answers: [
-            {text: "Respiration", correct: false},
-            {text: "Photosynthesis", correct: false},
-            {text: "Transpiration", correct: true},
-            {text: "Evaporation", correct: false},
+            {text: "Beijing", correct: false},
+            {text: "Seoul", correct: false},
+            {text: "Tokyo", correct: true},
+            {text: "Bangkok", correct: false},
         ]
     },
     {
-        question: "What is the chemical symbol for gold?",
+        question: "What is the longest river in the world?",
         answers: [
-            {text: "Ag", correct: false},
-            {text: "Au", correct: true},
-            {text: "Hg", correct: false},
-            {text: "Pb", correct: false},
+            {text: "Amazon River", correct: false},
+            {text: "Mississippi River", correct: false},
+            {text: "Nile River", correct: true},
+            {text: "Yangtze River", correct: false},
         ]
     },
     {
@@ -171,21 +171,21 @@ const questions = [
         ]
     },
     {
-        question: "The highest waterfall in the world by height is located in which country?",
+        question: "Which country is the origin of the Olympic Games?",
         answers: [
-            {text: "Zambia", correct: false},
-            {text: "Venezuela", correct: true},
-            {text: "South Africa", correct: false},
-            {text: "Brazil", correct: false},
+            {text: "Italy", correct: false},
+            {text: "Greece", correct: true},
+            {text: "Egypt", correct: false},
+            {text: "France", correct: false},
         ]
     },
     {
-        question: "Which river is the longest in Africa?",
+        question: "Which ocean is the deepest in the world",
         answers: [
-            {text: "Nile", correct: true},
-            {text: "Congo", correct: false},
-            {text: "Niger", correct: false},
-            {text: "Zambezi", correct: false},
+            {text: "Atlantic Ocean", correct: false},
+            {text: "Indian Ocean", correct: false},
+            {text: "Arctic Ocean", correct: false},
+            {text: "Pacific Ocean ", correct: true},
         ]
     },
     {
@@ -216,7 +216,7 @@ const questions = [
        ]
     },
     {
-        question: " Which planet in our solar system is known for being red?",
+        question: "Which planet is known as the Red Planet?",
         answers: [
             {text: "Mars", correct: true},
             {text: "Jupiter", correct: false},
@@ -243,7 +243,7 @@ const questions = [
         ]
     },
     {
-        question: "Which animal is known for its slow movement and long lifespan?",
+        question: "Which animal is known for its slothful movement and long lifespan?",
         answers: [
             {text: "Tortoise", correct: true},
             {text: "Elephant", correct: false},
@@ -252,45 +252,42 @@ const questions = [
         ]
     },
     {
-        question: "Which animal has the longest gestation period?",
+        question: "What is the tallest building in the world?",
         answers: [
-            {text: "Elephant", correct: true},
-            {text: "Giraffe", correct: false},
-            {text: "Hippopotamus", correct: false},
-            {text: "Whale", correct: false},
+            {text: "Shanghai Tower", correct: false},
+            {text: "Burj Khalifa", correct: true},
+            {text: "One World Trade Center", correct: false},
+            {text: "Eiffel Tower", correct: false},
         ]
     },
     {
-        question: "Which animal is known for its agility and ability to climb trees?",
+        question: "Which country is the largest producer of coffee in the world?",
         answers: [
-            {text: "Monkey", correct: true},
-            {text: "Lion", correct: false},
-            {text: "Tiger", correct: false},
-            {text: "Bear", correct: false},
+            {text: "Vietnam", correct: false},
+            {text: "Ethiopia", correct: false},
+            {text: "Colombia", correct: false},
+            {text: "Brazil", correct: true},
         ]
     }
 ];
 
-//default the console 
+
+// Default the console 
 console.log = function() {};
 Object.defineProperty(window, 'console', { get: function() { return { log: function() {} }; } });
 
-
-//Disable the inspect
+// Disable the inspect
 document.oncontextmenu = function() { 
-return false; 
+    return true; 
 };
 
-
-// shuffle the questions array
+// Shuffle the questions array
 questions.sort(() => Math.random() - 0.5);
 
-
-// shuffle the answers array for each question
+// Shuffle the answers array for each question
 questions.forEach(question => {
     question.answers.sort(() => Math.random() - 0.5);
 });
-
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -298,12 +295,18 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let questionsAnswered = 0; // Counter for questions answered
+let timerElement = document.getElementById('timer');
+let timeLeft;
+let timerInterval;
 
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML =  "Next";
+    questionsAnswered = 0; // Reset counter
+    nextButton.innerHTML = "Next";
     showQuestion();
+    startTimer(); // Start or restart the timer
 }
 
 function showQuestion(){
@@ -312,24 +315,21 @@ function showQuestion(){
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+    // Shuffle the answers before displaying them
+    const shuffledAnswers = currentQuestion.answers.slice();
+    shuffledAnswers.sort(() => Math.random() - 0.5);
 
-    // shuffle the answers before displaying them
-  const shuffledAnswers = currentQuestion.answers.slice();
-  shuffledAnswers.sort(() => Math.random() - 0.5);
-
-
-  shuffledAnswers.forEach(answer => {
-    const button = document.createElement("button");
-    button.innerHTML = answer.text;
-    button.classList.add("btn");
-    answerButtons.appendChild(button);
-    if(answer.correct){
-      button.dataset.correct = answer.correct;
-    }
-    button.addEventListener("click", selectAnswer);
-  });
+    shuffledAnswers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
 }
-
 
 function resetState(){
     nextButton.style.display = "none";
@@ -344,42 +344,100 @@ function selectAnswer(e){
     if(isCorrect){
         selectedBtn.classList.add("correct");
         score++;
-    }else{
+    } else {
         selectedBtn.classList.add("incorrect");
     }
     Array.from(answerButtons.children).forEach(button => {
        if(button.dataset.correct === "true"){
-        button.classList.add("correct");
+            button.classList.add("correct");
        }
        button.disabled = true;
     });
     nextButton.style.display = "block";
+
+    // Increment the questions answered counter
+    questionsAnswered++;
 }
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You answered ${questionsAnswered} questions.`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 
-
-function  handleNextButton(){
+function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
         showQuestion();
-    }else{
+    } else {
         showScore();
     }
 }
 
+function startTimer() {
+    timeLeft = 14 * 60; // 14 minutes in seconds
+    timerInterval = setInterval(updateTimer, 400); // Update timer every second
+}
+
+function updateTimer() {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;  // Format seconds
+
+    timerElement.textContent = `${minutes}:${seconds}`;
+
+    if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        endQuiz();
+    }
+
+    timeLeft--;
+}
+
+function endQuiz() {
+    // Disable all buttons
+    const buttons = document.querySelectorAll('.btn, #next-btn');
+    buttons.forEach(button => {
+        button.disabled = true;
+    });
+
+    // Display a message in the timer area
+    timerElement.textContent = "Time's up!";
+
+    // Create a replay button
+    let replayButton = document.createElement('button');
+    replayButton.textContent = 'Replay';
+    replayButton.id = 'replay-btn';
+    replayButton.style.marginTop = '20px';
+    
+    // Add styling for the replay button
+    replayButton.style.background = '#001e4d';
+    replayButton.style.color = '#fff';
+    replayButton.style.border = 'none';
+    replayButton.style.padding = '10px 20px';
+    replayButton.style.borderRadius = '5px';
+    replayButton.style.cursor = 'pointer';
+    
+    // Add the button to the DOM
+    document.querySelector('.app').appendChild(replayButton);
+
+    // Add replay functionality
+    replayButton.addEventListener('click', () => {
+        // Reset quiz and timer when replay button is clicked
+        startQuiz();  // Calls startQuiz to reset everything, including the timer
+    });
+
+    // Display score and number of questions answered
+    questionElement.innerHTML = `Time's up! You scored ${score} out of ${questions.length}. You answered ${questionsAnswered} questions.`;
+}
 
 nextButton.addEventListener("click", () => {
-     if(currentQuestionIndex < questions.length){
+    if(currentQuestionIndex < questions.length){
         handleNextButton();
-     }else{
+    } else {
         startQuiz();
-     }
+    }
 });
 
 startQuiz();
