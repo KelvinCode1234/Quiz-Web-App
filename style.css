@@ -32,12 +32,14 @@ h2 {
 
 .container {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60rem;
-    margin-block: -55px;
+    max-width: 600rem;
+    margin-block: 55px;
+    margin-top: -20px;
+    top: 5;
 }
 
 .flex-column {
@@ -111,9 +113,9 @@ h1 {
     }
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     h1 {
-      font-size: 30px;
+      font-size: 33px;
       text-align: center;
     }
 

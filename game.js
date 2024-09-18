@@ -278,7 +278,7 @@ Object.defineProperty(window, 'console', { get: function() { return { log: funct
 
 // Disable the inspect
 document.oncontextmenu = function() { 
-    return true; 
+    return false; 
 };
 
 // Shuffle the questions array
