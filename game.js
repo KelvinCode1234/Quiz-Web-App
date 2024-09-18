@@ -272,14 +272,16 @@ const questions = [
 ];
 
 
+
+
 // Default the console 
 console.log = function() {};
 Object.defineProperty(window, 'console', { get: function() { return { log: function() {} }; } });
 
-// Disable the inspect
-document.oncontextmenu = function() { 
-    return false; 
-};
+// Disable context menu on right-click
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
 
 // Shuffle the questions array
 questions.sort(() => Math.random() - 0.5);
@@ -376,7 +378,7 @@ function handleNextButton(){
 }
 
 function startTimer() {
-    timeLeft = 14 * 60; // 14 minutes in seconds
+    timeLeft = 15 * 60; // 15 minutes in seconds
     timerInterval = setInterval(updateTimer, 400); // Update timer every second
 }
 
